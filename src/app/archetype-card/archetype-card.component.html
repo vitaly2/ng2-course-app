@@ -1,0 +1,18 @@
+<div class="card" [ngClass]="classForSex(character.sex)">
+  <div class="card-content">
+    <div class="card-title">{{character.name}}
+    <button class="btn right" (click)="selectChar.emit(character)"
+            [disabled]="!formValid" [class.disabled]="!formValid">Choose</button></div>
+    <ul class="collection">
+      <li class="collection-item" ><strong>birthday:</strong> {{character.birthday}}</li>
+      <li class="collection-item" ><strong>weight:</strong> {{character.weight}}</li>
+      <li class="collection-item" ><strong>height:</strong> {{character.height}}</li>
+      <li class="collection-item" ><strong>strength:</strong> {{character.strength}}</li>
+      <li class="collection-item" ><strong>dexterity:</strong> {{character.dexterity}}</li>
+      <li class="collection-item" ><strong>hair color:</strong>{{character['hair color']}}</li>
+      <li class="collection-item" ><strong>race:</strong> {{character.race}}</li>
+      <li class="collection-item" ><strong>sex:</strong> {{character.sex}}</li>
+      <li class="collection-item" ><strong>statPref:</strong> {{character.statPref}}</li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<h2>
+  Choose your Archetype
+</h2>
+<div>
+<select></select>
+</div>
+<div class="row">
+  <div class="col s4">
+    <label>Sex:</label>
+    <button class="btn" [ngClass]="classForSexBtn('male')" (click)="selectSex('male')">Male</button>
+    <button class="btn" [ngClass]="classForSexBtn('female')" (click)="selectSex('female')">Female</button>
+    <button class="btn" [ngClass]="classForSexBtn('other')" (click)="selectSex('other')">Other</button>
+    <button class="btn" [ngClass]="classForSexBtn('all')" (click)="selectSex('all')">All</button>
+  </div>
+  <div class="col s4">
+
+  </div>
+  <div class="col s4">
+
+  </div>
+  <div class="col s4">
+
+  </div>
+</div>

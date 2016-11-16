@@ -1,0 +1,7 @@
+.nav-wrapper ul {
+    list-style: none;
+}
+
+.nav-wrapper ul li {
+    display: inline;
+}

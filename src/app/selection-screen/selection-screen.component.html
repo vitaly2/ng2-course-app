@@ -1,0 +1,13 @@
+<h2>Selection screen</h2>
+<p>
+  <a [routerLink]="['/home']">Go Home</a>
+</p>
+<app-character-name (formValid)="formValid = $event"></app-character-name>
+<app-archetype-filter></app-archetype-filter>
+<div class="row">
+  <div class="col sm-12">
+    <p *ngIf="!selectedCharacter">No character selection</p>
+    <p *ngIf="selectedCharacter">You have selected {{selectedCharacter.name}}</p>
+  </div>
+</div>
+<app-archetype-list (selectChar)="selectCharacter($event)" [formValid]="formValid"></app-archetype-list>
