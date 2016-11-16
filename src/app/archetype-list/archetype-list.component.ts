@@ -9,12 +9,12 @@ import { Observable } from 'rxjs';
   providers: [WorkerDataService]
 })
 export class ArchetypeListComponent implements OnInit {
-  characters: Observable<ICharacterEntry[]>;
+  characters$: Observable<ICharacterEntry[]>;
   @Input() formValid: boolean;
   @Output() selectChar = new EventEmitter<ICharacterEntry>();
 
   constructor(private wds: WorkerDataService) {
-    this.characters = wds.getArchetypes();
+    this.characters$ = wds.getArchetypes();
   }
 
    ngOnInit() {

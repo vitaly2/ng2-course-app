@@ -12,6 +12,7 @@ import { CharacterNameComponent } from './character-name/character-name.componen
 import { ArchetypeFilterComponent } from './archetype-filter/archetype-filter.component';
 import { ArchetypeListComponent } from './archetype-list/archetype-list.component';
 import { ArchetypeCardComponent } from './archetype-card/archetype-card.component';
+import { ArchetypeListDisplayComponent } from './archetype-list-display/archetype-list-display.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     CharacterNameComponent,
     ArchetypeFilterComponent,
     ArchetypeListComponent,
-    ArchetypeCardComponent
+    ArchetypeCardComponent,
+    ArchetypeListDisplayComponent
   ],
   imports: [
     BrowserModule,
